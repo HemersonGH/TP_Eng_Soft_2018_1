@@ -2,7 +2,7 @@
 <p> Trabalho Prático De Engenharia de Software - 2018/1 - Sistema Gerenciador De Atividades Curriculares </p>
 
 Os produtos de trabalho referente a esse projeto se encontra no Google Driver
-pelo Link: https://drive.google.com/drive/folders/1qKuH4UJI4pZ4dgHFmJyi52-NaFw-a3wr <br />
+pelo Link: <br /> https://drive.google.com/drive/folders/1qKuH4UJI4pZ4dgHFmJyi52-NaFw-a3wr <br />
 <br />
 Essa pasta conterá com as seguintes estruturas e documentos:<br />
 <b>Áudios Dos Requisitos:</b> Um documento descrevendo toda a entrevista feita com o cliente. <br />
