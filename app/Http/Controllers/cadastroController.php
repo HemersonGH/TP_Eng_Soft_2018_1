@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Jobs\SendVerificationEmail;
 
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Validator;
 use Auth;
@@ -44,18 +46,38 @@ class cadastroController extends Controller
     	$newUser->institution = $request->input('institution');
     	$newUser->email = $request->input('email');
     	$newUser->name = $request->input('name');
+        //$newUser->email_token = base64_encode($request->input('email'));
     
     	if($request->input('sex') == "Mulher") $newUser->sex =  'F';
     	else $newUser->sex =  'F';
     
         $newUser->type = $request->input('type');
     	$newUser->password = bcrypt($request->input('password'));
-    	$newUser->save();
     	
+       /* event(new Registered($newUser));
+
+        dispatch(new SendVerificationEmail($newUser));
+
+        return view('verification');*/
+        $newUser->save();
 		Auth::login($newUser);
 
-    	return redirect()->back();
+    	return redirect('home');
+        
     	//return "oi";
     }
 
+    public function verify($token)
+    {
+
+        $user = User::where('email_token',$token)->first();
+
+       // $user->verified = 1;
+
+        if($user->save()){
+
+        return view('emailConfirm',['user'=>$user]);
+
+        }
+    }
 }

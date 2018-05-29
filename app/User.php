@@ -24,6 +24,7 @@ class User extends Authenticatable
         'sex',
         'type',
         'id',
+        //'email_token',
     ];
 
     /**

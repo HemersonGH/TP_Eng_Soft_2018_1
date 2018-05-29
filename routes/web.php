@@ -13,10 +13,9 @@
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
+Route::get('/verifyemail/{token}', 'cadastroController@verify');
 
 //Only on development
 Route::get('/html/{id}', function ($id) {
