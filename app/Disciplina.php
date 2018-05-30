@@ -12,5 +12,5 @@ class Disciplina extends Model
     	'id_professor',
     	'tipo_trofeu',
     	'tipo_atividade',
-    ]
+    ];
 }

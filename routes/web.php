@@ -22,7 +22,7 @@ Route::get('/html/{id}', function ($id) {
     return view('html.'.$id);
 });
 
-Route::group(['prefix' => 'cadastro'], function(){
+Route::group(['prefix' => '/cadastro'], function(){
 
 	Route::get('/', 'cadastroController@view')->name('cadastro.view');
 
@@ -30,6 +30,14 @@ Route::group(['prefix' => 'cadastro'], function(){
 
 });
 
+Route::group(['prefix' => '/disciplinas'], function(){
+	
+	Route::get('/{type_disciplinas}',['uses' => 'disciplinasController@view'])->name('disciplinas.view');
+
+	Route::get('/disciplinas/{id}', ['uses' => 'disciplinaController@view'])->name('disciplina.view');
+
+
+});
 
 Auth::routes();
 

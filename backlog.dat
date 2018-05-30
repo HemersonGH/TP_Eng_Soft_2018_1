@@ -1,0 +1,2 @@
+- Incluir campo descrição em disciplina
+- Arrumar os "href" dos botões da view de disciplina com " {{ route('disciplina.view', ['disciplinas' => 'matriculadas']) }}"

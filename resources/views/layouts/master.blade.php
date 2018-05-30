@@ -25,7 +25,7 @@
 		</div>
 
 		<nav id="menu" height="100px" class="navbar navbar-expand-sm navbar-dark mb-4">
-		    <a class="navbar-brand" href="#">Disciplinas</a>
+		    <a class="navbar-brand" href="{{ route('home') }}">Disciplinas</a>
 		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 		        <span class="navbar-toggler-icon"></span>
 		    </button>

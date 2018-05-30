@@ -29,11 +29,11 @@ class HomeController extends Controller
     {   
         
         if (User::isProfessor(Auth::user())) {
-            return view('home')->with(['teste' => 'Você é um professor']);
+            return view('home')->with(['type' => 'professor']);
         }
 
         else {
-            return view('home')->with(['teste' => 'Você é um aluno']);
+            return view('home')->with(['type' => 'aluno']);
         }
     }
 }

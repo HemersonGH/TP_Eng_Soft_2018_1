@@ -17,7 +17,7 @@ class CreateAlunosTable extends Migration
             $table->integer('id_disciplina')->unsigned();
             $table->integer('id_usuario')->unsigned();
             $table->primary(['id_disciplina', 'id_usuario']);
-            $table->foreign('id_usuario')->references('id')->on('users');
+            $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('id_disciplina')->references('id')->on('disciplinas')->onDelete('cascade');
             $table->timestamps();
         });

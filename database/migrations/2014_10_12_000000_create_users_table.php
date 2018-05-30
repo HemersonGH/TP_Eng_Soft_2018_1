@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->integer('cpf')->unique();
             $table->date('nasc');
-            $table->string('institution');
+            $table->string('institution')->nullable();
             $table->enum('sex', ['M', 'F']);
             $table->enum('type', [0, 1, 2]);
             $table->string('name');

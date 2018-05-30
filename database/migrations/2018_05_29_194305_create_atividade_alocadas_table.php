@@ -17,7 +17,7 @@ class CreateAtividadeAlocadasTable extends Migration
             $table->increments('id');
             $table->integer('id_atividade')->unsigned();
             $table->integer('id_disciplina')->unsigned();
-            $table->datetime('data_entrega')->nullable();
+            $table->datetime('data_entrega');
             $table->foreign('id_atividade')->references('id')->on('atividades')->onDelete('cascade');
             $table->foreign('id_disciplina')->references('id')->on('disciplinas')->onDelete('cascade');
             $table->timestamps();
@@ -31,6 +31,6 @@ class CreateAtividadeAlocadasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('atividade_alocadas');
+        Schema::dropIfExists('atividades_alocadas');
     }
 }
