@@ -3,3 +3,5 @@
 - Incluir uma tabela que conecte um professor de UMA disciplina a UM aluno e UMA atividade (campos de comentario do professor e submissão da resposta pelo aluno )
 - Botão de voltar nas paginas
 - Botão na tela de disciplinas do professor para criar mais uma disciplina
+- Incluir campo de status em atividades_alocadas
+- trigger para backup (dump)

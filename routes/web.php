@@ -36,7 +36,7 @@ Route::group(['middleware' => 'auth'], function(){
 		
 		Route::get('/{type_disciplinas}',['uses' => 'disciplinasController@view'])->name('disciplinas.view');
 
-		Route::get('/disciplinas/{id}', ['uses' => 'disciplinaController@view'])->name('disciplina.view');
+		Route::get('/disciplina/{id}', ['uses' => 'disciplinaController@view'])->name('disciplina.view');
 
 	});
 

@@ -13,9 +13,22 @@
             <div class="col-sm-3 discOp">  
                 <div class="row">
                     <div class="col-sm-12">
+                        @if ($type_usuario == '0')
                             <a href=" {{ route('disciplinas.view', ['type_disciplinas' => 'matriculadas']) }}"><div class="lead text-muted text-dark" id="opMenuDisc">Disciplinas Matriculadas</div></a>
                             <a href="#"><div class="lead text-muted text-dark" id="opMenuDisc">Disciplinas Não Matriculadas</div></a>
                             <a href="#"><div class="lead text-muted text-dark" id="opMenuDisc">Disciplinas Finalizadas</div></a>
+                        @else 
+                            <a href=" {{ route('disciplinas.view', ['type_disciplinas' => 'minhas']) }}"><div class="lead text-muted text-dark" id="opMenuDisc">Minhas Disciplinas</div></a>
+                            <a href="#"><div class="lead text-muted text-dark" id="opMenuDisc">Outras Disciplinas</div></a>
+                            <a href="#"><div class="lead text-muted text-dark" id="opMenuDisc">Disciplinas Finalizadas</div></a>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div id="positionBtn">
+                                        <button id="btn" type="submit" class="btn" >Cadastrar Nova Disciplina</button>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>
