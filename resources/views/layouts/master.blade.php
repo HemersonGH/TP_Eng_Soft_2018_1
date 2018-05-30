@@ -25,22 +25,31 @@
 		</div>
 
 		<nav id="menu" height="100px" class="navbar navbar-expand-sm navbar-dark mb-4">
+            @auth
 		    <a class="navbar-brand" href="{{ route('home') }}">Disciplinas</a>
+            @endauth
 		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 		        <span class="navbar-toggler-icon"></span>
 		    </button>
+
+            
 		    <div class="collapse navbar-collapse" id="collapsibleNavbar">
 		        <ul class="navbar-nav">
 		            <li class="nav-item">
+                        @auth
 		                <a class="nav-link" href="#">Troféus</a>
+                        @endauth
 		            </li>
 	                <li class="nav-item">
+                        @auth
 	                    <a class="nav-link" href="#">Equipes</a>
+                        @endauth
 	                </li>
 	            </ul>  
 
                 
 		    </div>     
+            
 	<ul class="nav navbar-nav navbar-right">
 					@guest
                         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Entrar</a></li>
