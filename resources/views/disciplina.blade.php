@@ -33,7 +33,7 @@
                     @foreach ($atividades as $atividade)
                         <div class="col-sm-4">
                                 <div id="opDisciplina">
-                                    <a href="#"><h5>{{ $atividade->nome }}</h5></a>
+                                    <a href="{{ route('atividade.view', ['id' => $atividade->id, 'id_disciplina' => $disciplina->id]) }}"><h5>{{ $atividade->nome }}</h5></a>
                                     <p class="text-muted">{{ $atividade->descricao }}</p>
                                 </div>
                         </div>

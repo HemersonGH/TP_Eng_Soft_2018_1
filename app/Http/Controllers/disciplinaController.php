@@ -14,7 +14,7 @@ class disciplinaController extends Controller
 
     	$disciplina = DB::select('SELECT * FROM disciplinas WHERE id ='.$id);
 
-    	$list_atividades = DB::select('SELECT a.nome, a.descricao
+    	$list_atividades = DB::select('SELECT a.nome, a.descricao, a.id
 									   FROM disciplinas AS d, atividades_alocadas AS aa, atividades AS a
 									   WHERE a.id = aa.id_atividade and d.id ='.$id);
 

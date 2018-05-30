@@ -30,14 +30,24 @@ Route::group(['prefix' => '/cadastro'], function(){
 
 });
 
-Route::group(['prefix' => '/disciplinas'], function(){
-	
-	Route::get('/{type_disciplinas}',['uses' => 'disciplinasController@view'])->name('disciplinas.view');
+Route::group(['middleware' => 'auth'], function(){
 
-	Route::get('/disciplinas/{id}', ['uses' => 'disciplinaController@view'])->name('disciplina.view');
+	Route::group(['prefix' => '/disciplinas'], function(){
+		
+		Route::get('/{type_disciplinas}',['uses' => 'disciplinasController@view'])->name('disciplinas.view');
 
+		Route::get('/disciplinas/{id}', ['uses' => 'disciplinaController@view'])->name('disciplina.view');
 
+	});
+
+	Route::group(['prefix' => '/atividade'], function(){
+
+		Route::get('/{id_disciplina}/{id}',['uses' => 'atividadeController@view'])->name('atividade.view');
+
+	});
 });
+
+
 
 Auth::routes();
 
