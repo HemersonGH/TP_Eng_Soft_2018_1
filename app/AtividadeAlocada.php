@@ -11,5 +11,6 @@ class AtividadeAlocada extends Model
     	'id_atividade',
     	'id_disciplina',
     	'data_entrega',
+    	'status',
     ];
 }

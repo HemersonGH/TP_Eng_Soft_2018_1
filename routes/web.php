@@ -44,6 +44,8 @@ Route::group(['middleware' => 'auth'], function(){
 
 		Route::get('/{id_disciplina}/{id}',['uses' => 'atividadeController@view'])->name('atividade.view');
 
+		Route::get('/cadastrar', 'atividadeController@create')->name('atividade.create');
+
 	});
 });
 

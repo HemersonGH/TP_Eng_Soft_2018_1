@@ -5,3 +5,4 @@
 - Botão na tela de disciplinas do professor para criar mais uma disciplina
 - Incluir campo de status em atividades_alocadas
 - trigger para backup (dump)
+- Criar CRUD para atividades (de uma disciplina e gerais) e Disciplinas

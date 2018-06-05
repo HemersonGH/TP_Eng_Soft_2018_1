@@ -16,7 +16,7 @@
                     <div class="col-sm-12">
 
                             <a href="#"><div id="opMenuDisc">Atividades em Alteração</div></a>
-                            <a href="disciplinaAluno.html"><div id="opMenuDisc">Atividades em Andamento</div></a>
+                            <a href="#"><div id="opMenuDisc">Atividades em Andamento</div></a>
                             <a href="#"><div id="opMenuDisc">Atividades Finalizadas</div></a>
                             <a href="#"><div id="opMenuDisc">Atividades Enviadas</div></a>
                         @if ($type_usuario != '0')

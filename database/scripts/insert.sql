@@ -16,7 +16,7 @@ INSERT INTO disciplinas (nome, id_professor, tipo_trofeu, tipo_atividade) VALUES
 INSERT INTO disciplinas (nome, id_professor, tipo_trofeu, tipo_atividade) VALUES ('Git/GitHub avançado', '1', 'pontos', 'individual');
 
 # ATIVIDADES_ALOCADAS
-INSERT INTO atividades_alocadas (id_atividade, id_disciplina, data_entrega) VALUES ('1', '1', '22-02-19');
+INSERT INTO atividades_alocadas (id_atividade, id_disciplina, data_entrega, status) VALUES ('1', '1', '22-02-19', 'andamento');
 
 # ALUNOS
 INSERT INTO alunos (id_disciplina, id_usuario) VALUES ('1', '2');

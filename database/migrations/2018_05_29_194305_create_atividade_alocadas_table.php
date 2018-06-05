@@ -18,6 +18,7 @@ class CreateAtividadeAlocadasTable extends Migration
             $table->integer('id_atividade')->unsigned();
             $table->integer('id_disciplina')->unsigned();
             $table->datetime('data_entrega');
+            $table->enum('status', ['alteração', 'andamento', 'finalizada']);
             $table->foreign('id_atividade')->references('id')->on('atividades')->onDelete('cascade');
             $table->foreign('id_disciplina')->references('id')->on('disciplinas')->onDelete('cascade');
             $table->timestamps();
