@@ -46,6 +46,8 @@ Route::group(['middleware' => 'auth'], function(){
 
 		Route::get('/cadastrar', 'atividadeController@create')->name('atividade.create');
 
+		Route::post('/store', 'envioController@store')->name('envio.store');
+
 	});
 });
 

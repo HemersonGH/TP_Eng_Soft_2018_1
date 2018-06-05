@@ -10,9 +10,16 @@ class atividadeController extends Controller
 {
     public function view($id_disciplina, $id){
     	$user = Auth::user();
-    	$atividade = DB::select('SELECT a.nome, a.descricao, aa.data_entrega, d.tipo_trofeu, d.tipo_atividade FROM atividades AS a, atividades_alocadas AS aa, disciplinas AS d WHERE a.id ='.$id.' AND aa.id_disciplina ='.$id_disciplina.' AND d.id='.$id_disciplina);
+    	$atividade = DB::select('SELECT a.nome, a.descricao, aa.id, aa.data_entrega, d.tipo_trofeu, d.tipo_atividade FROM atividades AS a, atividades_alocadas AS aa, disciplinas AS d WHERE a.id ='.$id.' AND aa.id_atividade = a.id  AND aa.id_disciplina ='.$id_disciplina.' AND d.id='.$id_disciplina);
+    	$envio = DB::select('SELECT * FROM envios WHERE id_aluno ='. $user->id .' and id_atividade_alocada ='. $atividade[0]->id);
 
-    	return view('atividade')->with(['atividade' => $atividade[0], 'type_usuario' => $user->type]);
+    	
+    	# GAMBIARRA
+    	if ($envio == NULL) {
+    		return view('atividade')->with(['atividade' => $atividade[0], 'usuario' => $user, 'envio' => $envio]);
+    	}
 
+    	else
+    		return view('atividade')->with(['atividade' => $atividade[0], 'usuario' => $user, 'envio' => $envio[0]]);
     }
 }
