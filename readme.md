@@ -1,58 +1,45 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# TP_Eng_Soft_2018_1
+<p> Trabalho Prático De Engenharia de Software - 2018/1 - Sistema 
+Gerenciador De Atividades Curriculares </p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+ Os produtos de trabalho 
+referente a esse projeto se encontra no Google Driver pelo Link:
+<br /> 
+https://drive.google.com/drive/folders/1qKuH4UJI4pZ4dgHFmJyi52-NaFw-a3wr 
+<br /> 
+<br /> 
+Essa pasta conterá com as seguintes estruturas e 
+documentos:
+<br /> 
+<b>Áudios Dos Requisitos:</b> Um documento descrevendo 
+toda a entrevista feita com o cliente. 
+<br />
+<b>Backlog:</b> Um documento listando todos os itens que terão de ser desenvolvido para 
+conclusão do projeto. 
+<br />
+ <b>Casos De Usos:</b> Todos os documentos relacionados a casos de uso e diagrama de caso de uso. 
+<br />
+<b>Cronograma De Atividades:</b> Um cronograma de como foi divido e feito todas as atividades estabelecidas. 
+<br />
+<b>Demais 
+Atividades:</b> Todas os documento das demais atividades estabelecidas pelos professores. <br /> <b>Documentos De Visão De Produto:
+</b> Um documento descrevendo o escopo e não escopo do projeto. 
+<br /> 
+<b>Frameworks E Ferramentas:</b> Um documento descrevendo todas as ferramentas e frameworks utilizados para o desenvolvimento do projeto. 
+<br /> <b>Protótipo:</b> Um PDF com as páginas do protótipo do projeto. 
+<br /> <b>Requisitos:</b> Todos os documentos relacionados aos requisitos do projeto. <br /> <b>Stakeholders:</b> Um documento 
+descrevendo os principais interessados do projeto. 
+<br /> 
+<br /> 
+<b>Divisão Da Equipe CS Dev:</b> 
+<br /> Rafaela (Dev && Scrum Master && WebDesing)
+<br /> Guilherme (Dev)
+<br /> Gabriel (Dev)
+<br />
 
-## About Laravel
+<h2>Políticas de uso do Git</h2>
+<b> Estruturas de pastas: </b> A base da estrutura de pastas seguirá a estrutura prédefinida do framework usado - <i> Laravel </i>.
+Adicionando as visões estritamente em html na pasta <i> /resources/views/html </i>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+<b> Regras de commit: </b> O commit deve ser breve e conter em qual - ou quais - funcionalidades se foi trabalhado, identificando-a com uma sigla para o requisito rastreavel.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Pulse Storm](http://www.pulsestorm.net/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
