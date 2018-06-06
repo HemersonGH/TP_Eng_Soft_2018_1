@@ -3,6 +3,59 @@
 @section('title', 'Home')
 
 @section('content')
+
+
+<!-- GAMBIARRA -->
+<style>
+    
+  #btnUsuario{
+      background-color: #fff0c9;
+      color: black;
+  }
+  #btn{
+      background-color: #c19a25;
+      color: white;
+  }
+  #format{
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;  
+  }
+  #titulo{
+      font-size: 20px;
+      font-weight: bold;
+  }
+  #antesBtn{
+      padding-top: 25px;
+  }
+
+</style>
+
+
+@if ($usuario->type == '1')
+    
+    <h5>Envio:</h5>
+    {{$envio->answer}}
+    <br>
+    <br>
+    <br>
+    <form id="formProfessor" action="{{ route('envio.update') }}" method="POST">
+        {{ csrf_field()  }}
+        <input type="hidden" name="id_atividade_alocada" value='{{ $envio->id_atividade_alocada }}'>
+        <input type="hidden" name="id_aluno" value='{{ $envio->id_aluno }}'>
+        <input type="radio" name="status" value="correto" checked> Correto<br>
+        <input type="radio" name="status" value="incorreto"> Incorreto<br>
+        
+        <label>Comentário</label>
+        <textarea form="formProfessor" name="comentario"></textarea>
+        <button type="submit">Corrigir</button>
+    </form>       
+
+
+    
+
+@else
+
 <div class="row">
             <div class="col-sm-12" align="middle">
                 <!--Deverá ser adicionado o nome da atividade disponível no BD-->
@@ -56,4 +109,5 @@
         </div>    
         @endif
     </div>
+@endif
 @endsection

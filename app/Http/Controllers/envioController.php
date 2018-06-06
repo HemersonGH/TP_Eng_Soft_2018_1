@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Envio;
 
+use Auth;
+use DB;
+
 use Illuminate\Http\Request;
 
 class envioController extends Controller
@@ -25,5 +28,29 @@ class envioController extends Controller
     }
 
     public function update(Request $request){
+
+
+    	DB::update('UPDATE envios SET status ="'.$request->input('status').'", comentario ="'.$request->input('comentario').'" WHERE id_aluno ='.$request->input('id_aluno'). ' and id_atividade_alocada ='. $request->input('id_atividade_alocada'));
+    	
+    	/*$envio = Envio::where('id_atividade_alocada', '=', $request->input('id_atividade_alocada'))->where('id_aluno', '=', $request->input('id_aluno'))->get();
+
+    	$envio->status = $request->input('status');
+    	$envio->comentario = $request->input('comentario');
+
+    	$envio->save();*/
+
+        return redirect('home');
+
+
+    }
+
+    public function view(Request $request){
+    	$user = Auth::user();
+    	$envio = Envio::where('id_atividade_alocada', '=', $request->input('id_atividade_alocada'))->where('id_aluno', '=', $request->input('id_aluno'))->get();
+    //	$atividade = DB::statement('SELECT * FROM ')
+
+
+    	return view('atividade')->with(['usuario' => $user, 'envio' => $envio[0]]);
+    //	return $envio;
     }
 }

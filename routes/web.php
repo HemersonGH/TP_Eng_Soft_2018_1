@@ -48,7 +48,14 @@ Route::group(['middleware' => 'auth'], function(){
 
 		Route::post('/store', 'envioController@store')->name('envio.store');
 
+		Route::post('/view', 'envioController@view')->name('envio.view');
+
+		Route::post('/update', 'envioController@update')->name('envio.update');
+
+
 	});
+
+	Route::get('/envios', 'enviosController@view')->name('envios.view');
 });
 
 

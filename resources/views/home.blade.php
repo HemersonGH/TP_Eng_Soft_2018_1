@@ -2,6 +2,11 @@
 
 @section('title', 'Home')
 
+@section('link')
+        @parent
+        <link href="{{asset('css/action_button.css')}}" rel="stylesheet" type="text/css">
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row">
@@ -43,6 +48,20 @@
                     <div class="col-sm-4">
                             <a href="#"><div class="fakeimg"> <div class="mt-4 display-4 text-dark">Disciplinas Finalizadas</div> </div></a>
                     </div>
+                </div>
+                <div class="btnNotify">
+                    @if ($envios)
+                    <div class="col-3 btnNotifyBtn text-light">
+                        <form>
+                        </form>
+                        <a href="{{ route('envios.view') }}" class="btn btn-danger btnCircular btnPrincipal" name="1">{{ $envios }}</i></a>
+                        
+                    </div>
+                    @else
+                    <div class="col-3 btnNotifyBtn">
+                        <button class="btn btn-success btnCircular btnPrincipal" name="1">{{ $envios }}</i></button>
+                    </div>
+                    @endif
                 </div>
                 @endif
 

@@ -91,17 +91,15 @@
         <div class="row rowElementos">
             <div id="titulo" class="col-sm-12">
                 <!--Deverão ser adicionadas aqui o código e nome da disciplina presentes no BD -->
-                <h1>{{ $disciplina->nome }}</h1>
+                <h1>COD - Nome Disciplina</h1>
             </div>
         </div>
         <div class="row rowElementos" >
             <div class="col-sm-3 discOp">  
                 <div class="row">
                     <div class="col-sm-12">
-                            <a href="#"><div id="opMenuDisc">Atividades em Alteração</div></a>
-                            <a href="disciplinaAluno.html"><div id="opMenuDisc">Atividades em Andamento</div></a>
-                            <a href="#"><div id="opMenuDisc">Atividades Finalizadas</div></a>
-                            <a href="#"><div id="opMenuDisc">Atividades Enviadas</div></a>
+                            <a href="solicitacoesPendentes.html"><div id="opMenuDisc">Solicitações Pendentes</div></a>
+                            <a href="#"><div id="opMenuDisc">Solicitações Finalizadas</div></a>
                     </div>
                 </div>
             </div>
@@ -110,27 +108,27 @@
             <div class="col-sm-9">
                 <div class="row">
                     <div class="col-sm-12" id="tituloOp">
-                        <h4>Atividades em Andamento</h4>
+                        <h4>Atividades Recebidas - Solicitações Pendentes</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
                             <div id="opDisciplina">
-                                <a href="#"><h5>CODAtiv - Nome Atividade</h5></a>
+                                <a href="#"><h5>Nome Atividade - Nome Aluno</h5></a>
+                                <p>Descrição atividade, descrição atividade, descrição atividade, descrição atividade, 
+                                        descrição atividade, descrição atividade.</p>
+                            </div>
+                    </div>
+                    <div class="col-sm-4">
+                            <div id="opDisciplina">
+                                <a href="#"><h5>Nome Atividade - Nome Aluno</h5></a>
                                 <p>Descrição atividade, descrição atividade, descrição atividade, descrição atividade, 
                                     descrição atividade, descrição atividade.</p>
                             </div>
                     </div>
                     <div class="col-sm-4">
                             <div id="opDisciplina">
-                                <a href="#"><h5>CODAtiv - Nome Atividade</h5></a>
-                                <p>Descrição atividade, descrição atividade, descrição atividade, descrição atividade, 
-                                    descrição atividade, descrição atividade.</p>
-                            </div>
-                    </div>
-                    <div class="col-sm-4">
-                            <div id="opDisciplina">
-                                <a href="#"><h5>CODAtiv - Nome Atividade</h5></a>
+                                <a href="#"><h5>Nome Atividade - Nome Aluno</h5></a>
                                 <p>Descrição atividade, descrição atividade, descrição atividade, descrição atividade, 
                                     descrição atividade, descrição atividade.</p>
                             </div>
@@ -139,21 +137,21 @@
                 <div class="row">
                     <div class="col-sm-4">
                             <div id="opDisciplina">
-                                <a href="#"><h5>CODAtiv - Nome Atividade</h5></a>
+                                <a href="#"><h5>Nome Atividade - Nome Aluno</h5></a>
                                 <p>Descrição atividade, descrição atividade, descrição atividade, descrição atividade, 
                                     descrição atividade, descrição atividade.</p>
                             </div>
                     </div>
                     <div class="col-sm-4">
                             <div id="opDisciplina">
-                                <a href="#"><h5>CODAtiv - Nome Atividade</h5></a>
+                                <a href="#"><h5>Nome Atividade - Nome Aluno</h5></a>
                                 <p>Descrição atividade, descrição atividade, descrição atividade, descrição atividade, 
                                     descrição atividade, descrição atividade.</p>
                             </div>
                     </div>
                     <div class="col-sm-4">
                             <div id="opDisciplina">
-                                <a href="#"><h5>CODAtiv - Nome Atividade</h5></a>
+                                <a href="#"><h5>Nome Atividade - Nome Aluno</h5></a>
                                 <p>Descrição atividade, descrição atividade, descrição atividade, descrição atividade, 
                                     descrição atividade, descrição atividade.</p>
                             </div>

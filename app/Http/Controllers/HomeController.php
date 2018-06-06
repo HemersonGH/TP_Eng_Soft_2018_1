@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\User;
 
 use Auth;
+use DB;
 
 class HomeController extends Controller
 {
@@ -29,7 +30,11 @@ class HomeController extends Controller
     {   
         
         if (User::isProfessor(Auth::user())) {
-            return view('home')->with(['type' => 'professor']);
+            $user = Auth::user();
+            $envios = DB::select('SELECT e.*
+                                 FROM disciplinas AS d, users AS u, atividades_alocadas AS a, envios AS e 
+                                 WHERE u.id = '. $user->id .' and u.id = d.id_professor and d.id = a.id_disciplina and a.id = e.id_atividade_alocada and e.status = "não avaliado";');
+            return view('home')->with(['type' => 'professor', 'envios' => count($envios)]);
         }
 
         else {
