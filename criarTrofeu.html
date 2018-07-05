@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nome do Sistema</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!--Logo do sistema-->
+    <div id="top-bot" class="text-center" style="margin-bottom:0">
+        <img src="logo.svg"></img>
+    </div>
+
+    <!--Menu de opções para o usuário: Disciplinas, Troféus e Equipes-->
+    <nav id="menu" height="100px" class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="#">Disciplinas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Troféus</a>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Equipes</a>
+                    </li>    
+                </ul>
+            </div>     
+        </div>
+        <button type="button" class="btn" id="btnUsuario">Usuário</button>   
+    </nav>
+
+    <!--Título da página: Criação de Troféu-->
+    <div class="container" style="margin-top:30px">
+        <div class="row">
+            <div class="col-sm-12" align="middle">
+                <h2>Criação de Troféu</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--Formulário para criação de troféu-->
+    <div class="container" style="margin-top:30px">
+        <div class="row">
+            <div class="col-sm-12">
+                    <form id="form">
+                        <!--Elemento do form: caixa de texto para nome do troféu-->
+                        <div class="form-group">
+                          <label>Nome do Troféu:*</label>
+                          <input type="text" class="form-control">
+                        </div>
+
+                        <!--Elemento do form: textarea para descrição do troféu (opcional)-->
+                        <div class="form-group">
+                          <label>Descrição:</label>
+                          <textarea class="form-control" rows="3"></textarea>
+                        </div>
+
+                        <!--Elemento do form: valor/pontos do troféu (opcional)-->
+                        <div class="form-group">
+                            <label>Valor/pontos:</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <!--Elemento do form: imagem do troféu (opcional)-->
+                        <div class="form-group">
+                            <label>Imagem do Troféu:</label>
+                            <input type="file" class="form-control-file">
+                        </div>
+
+                        <!--Elemento do form: botão cadastrar troféu-->
+                        <div align="middle">
+                            <button id="btn" type="submit" class="btn">Criar Troféu</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="top-bot" class="text-center" style="margin-bottom:0">
+        <p></p>
+    </div>
+
+</body>
+</html>
