@@ -1,0 +1,35 @@
+/* Botão pesquisar e Mais Botões */
+.btnNotify, .btnMaisBotoes{
+	position: fixed;
+	float: bottom;
+	bottom: 15px;
+	right: 15px;
+	z-index: 100;
+}
+
+/* Botão superior esquerdo */
+.btnSupEsquerdo{
+	position: fixed;
+	float: top;
+	top: 15px;
+	left: 15px;
+	z-index: 100;
+}
+
+.btnNotifyInput, .btnNotifyBtn , .btnMaisBotoesBtn, .btnMaisBotoesGrupo{
+	display: inline-block;
+}
+
+.btnCircular{
+	border-radius: 90%;
+}
+
+.btnPrincipal{
+	font-size: 40px;
+	padding: 30px;
+}
+
+.btnSecundario{
+	font-size: 15px;
+	padding: 10px;
+}
