@@ -32,7 +32,7 @@
                                 <a href="{{ route('disciplinas.view', ['disciplinas' => 'nao_matriculadas']) }}"><div class="fakeimg" style="height: 16rem"> <div class="mt-4 display-4 text-dark"> Disciplinas não Matriculadas</div> </div></a>
                         </div>
                         <div class="col-sm-4">  
-                                <a href="#"><div class="fakeimg"> <div class="mt-4 display-4 text-dark"> Disciplinas Finalizadas</div> </div></a>
+                                <a href="{{ route('disciplinas.view', ['disciplinas' => 'finalizadas']) }}"><div class="fakeimg"> <div class="mt-4 display-4 text-dark"> Disciplinas Finalizadas</div> </div></a>
                         </div>
                     </div>
                 
@@ -46,7 +46,7 @@
                             <a href="{{ route('disciplinas.view', ['disciplinas' => 'outras']) }}"><div class="fakeimg"> <div class="mt-4 display-4 text-dark">Outras Disciplinas</div> </div></a>
                     </div>
                     <div class="col-sm-4">
-                            <a href="#"><div class="fakeimg"> <div class="mt-4 display-4 text-dark">Disciplinas Finalizadas</div> </div></a>
+                            <a href="{{ route('disciplinas.view', ['disciplinas' => 'finalizadas']) }}"><div class="fakeimg"> <div class="mt-4 display-4 text-dark">Disciplinas Finalizadas</div> </div></a>
                     </div>
                 </div>
                 <div class="btnNotify">
