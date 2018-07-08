@@ -41,7 +41,7 @@
 
                             <!-- Disciplina->name is the teacher's name -->
                             <p class="text-muted">
-                                Prof(a): {{$disciplina->name}}
+                                Professor(a): {{$disciplina->name}}
                             </p>
                             <p>
                                 {{$disciplina->descricao}}

@@ -15,10 +15,10 @@
                 <div class="row">
                     <div class="col-sm-12">
 
-                            <a href="#"><div id="opMenuDisc">Atividades em Alteração</div></a>
-                            <a href="#"><div id="opMenuDisc">Atividades em Andamento</div></a>
-                            <a href="#"><div id="opMenuDisc">Atividades Finalizadas</div></a>
-                            <a href="#"><div id="opMenuDisc">Atividades Enviadas</div></a>
+                            <a href="#"><div class="lead text-muted text-dark" id="opMenuDisc">Atividades em Alteração</div></a>
+                            <a href="#"><div class="lead text-muted text-dark" id="opMenuDisc">Atividades em Andamento</div></a>
+                            <a href="#"><div class="lead text-muted text-dark" id="opMenuDisc">Atividades Finalizadas</div></a>
+                            <a href="#"><div class="lead text-muted text-dark" id="opMenuDisc">Atividades Enviadas</div></a>
                         @if ($type_usuario != '0')
                             <div class="row">
                                 <div class="col-sm-12">
@@ -28,7 +28,7 @@
                                         <a id="btn" href="#" class="my-2 btn btn-outline-secondary" >Cadastrar Nova Atividade</a>
                                     </div>
                                     <div>
-                                        <form action="" method="POST">
+                                        <form action="{{ route('disciplina.delete') }}" method="POST">
                                             {{ csrf_field()  }}
                                             <input type="hidden" name="id" value="{{$disciplina->id}}">
                                             <button id="btn" href="#" class="btn btn-outline-danger">Finalizar disciplina</button>

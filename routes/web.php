@@ -38,6 +38,8 @@ Route::group(['middleware' => 'auth'], function(){
 
 		Route::get('/disciplina/{id}', ['uses' => 'disciplinaController@view'])->name('disciplina.view');
 
+        Route::post('/disciplina/delete', ['uses' => 'disciplinaController@delete'])->name('disciplina.delete');
+
 	});
 
 	Route::group(['prefix' => '/atividade'], function(){

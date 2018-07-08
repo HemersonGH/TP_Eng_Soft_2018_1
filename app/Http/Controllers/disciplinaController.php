@@ -27,7 +27,18 @@ class disciplinaController extends Controller
 									   WHERE a.id = aa.id_atividade and d.id=aa.id_disciplina and d.id='.$id);
 
     	return view('disciplina')->with(['disciplina' => $disciplina[0], 'atividades' => $list_atividades, 'type_usuario' => $user->type]);
-    }	
+    }
 
-    
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function delete(Request $request){
+        $id = $request->input("id");
+        $disciplina = new Disciplina;
+        $disciplina =  Disciplina::where('id', $id)->first();
+        $disciplina->status = "finalizada";
+        $disciplina->save();
+        return redirect('home');
+    }
 }
