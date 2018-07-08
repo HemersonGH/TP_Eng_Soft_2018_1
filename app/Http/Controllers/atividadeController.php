@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Atividade;
 
 use DB;
 use Auth;
@@ -39,5 +40,19 @@ class atividadeController extends Controller
         	else
         		return view('atividade')->with(['atividade' => $atividade[0], 'usuario' => $user, 'envio' => $envio[0]]);
         }
+    }
+
+    public function create(){
+        return view('cadastro_atividade');
+    }
+
+    public function store(Request $request){
+
+        $atividade = new Atividade;
+        $atividade->nome = $request->input('nome');
+        $atividade->descricao = $request->input('descricao');
+        $atividade->save();
+
+        return redirect()->back();
     }
 }

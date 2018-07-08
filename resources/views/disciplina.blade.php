@@ -25,7 +25,7 @@
                                     <div id="positionBtn">
                                         <!-- TODO: fix href
                                         -->
-                                        <a id="btn" href="#" class="my-2 btn btn-outline-secondary" >Cadastrar Nova Atividade</a>
+                                        <a id="btn" href="{{ route('atividade.create') }}" class="my-2 btn btn-outline-secondary" >Cadastrar Nova Atividade</a>
                                     </div>
                                     <div>
                                         <form action="{{ route('disciplina.delete') }}" method="POST">

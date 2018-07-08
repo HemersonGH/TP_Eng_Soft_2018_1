@@ -46,13 +46,17 @@ Route::group(['middleware' => 'auth'], function(){
 
 		Route::get('/{id_disciplina}/{id}',['uses' => 'atividadeController@view'])->name('atividade.view');
 
-		Route::get('/cadastrar', 'atividadeController@create')->name('atividade.create');
+		Route::get('/cadastro', 'atividadeController@create')->name('atividade.create');
+
+		Route::post('/cadastro/new', 'atividadeController@store')->name('atividade.store');
 
 		Route::post('/store', 'envioController@store')->name('envio.store');
 
 		Route::post('/view', 'envioController@view')->name('envio.view');
 
 		Route::post('/update', 'envioController@update')->name('envio.update');
+
+		Route::post('/alocadas/cadastro', 'atividadesAlocadasController@create')->name('alocada.create');
 
 
 	});
