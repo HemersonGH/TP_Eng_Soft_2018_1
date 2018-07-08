@@ -20,4 +20,6 @@ class AtividadeAlocada extends Model
     	'data_entrega',
     	'status',
     ];
+
+    protected $table = 'atividades_alocadas';
 }

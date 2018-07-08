@@ -23,9 +23,7 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div id="positionBtn">
-                                        <!-- TODO: fix href
-                                        -->
-                                        <a id="btn" href="{{ route('atividade.create') }}" class="my-2 btn btn-outline-secondary" >Cadastrar Nova Atividade</a>
+                                        <a id="btn" href="{{ route('alocada.create',['id_disciplina'=>$disciplina->id]) }}" class="my-2 btn btn-outline-success" >Cadastrar Nova Atividade</a>
                                     </div>
                                     <div>
                                         <form action="{{ route('disciplina.delete') }}" method="POST">
@@ -52,7 +50,7 @@
                     @foreach ($atividades as $atividade)
                         <div class="col-sm-4">
                                 <div id="opDisciplina">
-                                    <a href="{{ route('atividade.view', ['id' => $atividade->id, 'id_disciplina' => $disciplina->id]) }}"><h5>{{ $atividade->nome }}</h5></a>
+                                    <a class="text-info" href="{{ route('atividade.view', ['id' => $atividade->id, 'id_disciplina' => $disciplina->id]) }}"><h5>{{ $atividade->nome }}</h5></a>
                                     <p class="text-muted">{{ $atividade->descricao }}</p>
                                 </div>
                         </div>

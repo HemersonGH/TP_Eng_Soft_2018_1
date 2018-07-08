@@ -44,11 +44,15 @@ Route::group(['middleware' => 'auth'], function(){
 
 	Route::group(['prefix' => '/atividade'], function(){
 
+
+
 		Route::get('/{id_disciplina}/{id}',['uses' => 'atividadeController@view'])->name('atividade.view');
+
+        Route::get('alocadas/create/{id}', ['uses' => 'atividadesAlocadasController@create'])->name('alocada.create');
 
 		Route::get('/cadastro', 'atividadeController@create')->name('atividade.create');
 
-		Route::post('/cadastro/new', 'atividadeController@store')->name('atividade.store');
+		Route::post('/cadastro/store', 'atividadeController@store')->name('atividade.store');
 
 		Route::post('/store', 'envioController@store')->name('envio.store');
 
@@ -56,8 +60,7 @@ Route::group(['middleware' => 'auth'], function(){
 
 		Route::post('/update', 'envioController@update')->name('envio.update');
 
-		Route::post('/alocadas/cadastro', 'atividadesAlocadasController@create')->name('alocada.create');
-
+		Route::post('/alocadas/store', 'atividadesAlocadasController@store')->name('alocada.store');
 
 	});
 

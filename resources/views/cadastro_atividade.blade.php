@@ -24,6 +24,7 @@
             <div class="col-sm-12">
                     <form id="form" action="{{ route('atividade.store') }}" method="POST">
                         {{ csrf_field()  }}
+
                         <div class="form-group">
                           <label >Nome:</label>
                           <input name="nome" type="text" class="form-control">

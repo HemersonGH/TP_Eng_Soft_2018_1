@@ -24,7 +24,7 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div id="positionBtn">
-                                        <button id="btn" type="submit" class="btn" >Cadastrar Nova Disciplina</button>
+                                        <button id="btn" type="submit" class="my-2 btn btn-outline-success" >Cadastrar Nova Disciplina</button>
                                     </div>
                                 </div>
                             </div>
@@ -37,7 +37,7 @@
             <div class="col-sm-9">
                     @foreach ($disciplinas as $disciplina)            
                         <div id="opDisciplina">
-                            <a class="text-muted" href="{{ route('disciplina.view', ['id' => $disciplina->id]) }}"><h4> {{ $loop->iteration }}- <strong > {{ $disciplina->nome }}</strong> </h4></a>
+                            <a class="text-info" href="{{ route('disciplina.view', ['id' => $disciplina->id]) }}"><h4> {{ $loop->iteration }}- <strong > {{ $disciplina->nome }}</strong> </h4></a>
 
                             <!-- Disciplina->name is the teacher's name -->
                             <p class="text-muted">
