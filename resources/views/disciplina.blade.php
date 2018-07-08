@@ -23,7 +23,16 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div id="positionBtn">
-                                        <button id="btn" type="submit" class="btn" >Cadastrar Nova Atividade</button>
+                                        <!-- TODO: fix href
+                                        -->
+                                        <a id="btn" href="#" class="my-2 btn btn-outline-secondary" >Cadastrar Nova Atividade</a>
+                                    </div>
+                                    <div>
+                                        <form action="" method="POST">
+                                            {{ csrf_field()  }}
+                                            <input type="hidden" name="id" value="{{$disciplina->id}}">
+                                            <button id="btn" href="#" class="btn btn-outline-danger">Finalizar disciplina</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

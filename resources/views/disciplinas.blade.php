@@ -14,12 +14,12 @@
                 <div class="row">
                     <div class="col-sm-12">
                         @if ($type_usuario == '0')
-                            <a href=" {{ route('disciplinas.view', ['type_disciplinas' => 'matriculadas']) }}"><div class="lead text-muted text-dark" id="opMenuDisc">Disciplinas Matriculadas</div></a>
-                            <a href="#"><div class="lead text-muted text-dark" id="opMenuDisc">Disciplinas Não Matriculadas</div></a>
+                            <a href="{{ route('disciplinas.view', ['type_disciplinas' => 'matriculadas']) }}"><div class="lead text-muted text-dark" id="opMenuDisc">Disciplinas Matriculadas</div></a>
+                            <a href="{{ route('disciplinas.view', ['disciplinas' => 'nao_matriculadas']) }}"><div class="lead text-muted text-dark" id="opMenuDisc">Disciplinas Não Matriculadas</div></a>
                             <a href="#"><div class="lead text-muted text-dark" id="opMenuDisc">Disciplinas Finalizadas</div></a>
                         @else 
-                            <a href=" {{ route('disciplinas.view', ['type_disciplinas' => 'minhas']) }}"><div class="lead text-muted text-dark" id="opMenuDisc">Minhas Disciplinas</div></a>
-                            <a href="#"><div class="lead text-muted text-dark" id="opMenuDisc">Outras Disciplinas</div></a>
+                            <a href="{{ route('disciplinas.view', ['type_disciplinas' => 'minhas']) }}"><div class="lead text-muted text-dark" id="opMenuDisc">Minhas Disciplinas</div></a>
+                            <a href="{{ route('disciplinas.view', ['type_disciplinas' => 'outras']) }}"><div class="lead text-muted text-dark" id="opMenuDisc">Outras Disciplinas</div></a>
                             <a href="#"><div class="lead text-muted text-dark" id="opMenuDisc">Disciplinas Finalizadas</div></a>
                             <div class="row">
                                 <div class="col-sm-12">
@@ -38,9 +38,9 @@
                     @foreach ($disciplinas as $disciplina)            
                         <div id="opDisciplina">
                             <a class="text-muted" href="{{ route('disciplina.view', ['id' => $disciplina->id]) }}"><h4> {{ $loop->iteration }}- <strong > {{ $disciplina->nome }}</strong> </h4></a>
-                            <p>Descrição disciplina, descrição disciplina, descrição disciplina, descrição disciplina, 
-                                descrição disciplina, descrição disciplina, descrição disciplina, descrição disciplina,
-                                descrição disciplina,descrição disciplina,descrição disciplina.</p>
+                            <p>
+                                {{$disciplina->descricao}}
+                            </p>
                         </div>
                     @endforeach
             </div>
