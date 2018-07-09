@@ -31,7 +31,10 @@ class envioController extends Controller
 
 
     	DB::update('UPDATE envios SET status ="'.$request->input('status').'", comentario ="'.$request->input('comentario').'" WHERE id_aluno ='.$request->input('id_aluno'). ' and id_atividade_alocada ='. $request->input('id_atividade_alocada'));
-    	
+
+    	if ($request->input('status') == "correto"){
+    	    DB::statement("INSERT INTO trofeus (id_atividade_alocada, id_aluno, type) VALUES (".$request->input('id_atividade_alocada').",".$request->input('id_aluno').",'g')");
+        }
     	/*$envio = Envio::where('id_atividade_alocada', '=', $request->input('id_atividade_alocada'))->where('id_aluno', '=', $request->input('id_aluno'))->get();
 
     	$envio->status = $request->input('status');
@@ -40,8 +43,6 @@ class envioController extends Controller
     	$envio->save();*/
 
         return redirect('home');
-
-
     }
 
     public function view(Request $request){

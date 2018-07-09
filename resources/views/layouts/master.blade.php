@@ -37,7 +37,7 @@
 		        <ul class="navbar-nav">
 		            <li class="nav-item">
                         @auth
-		                <a class="nav-link" href="#">Troféus</a>
+		                <a class="nav-link" href="{{ route('trofeus') }}">Troféus</a>
                         @endauth
 		            </li>
 	                <li class="nav-item">
