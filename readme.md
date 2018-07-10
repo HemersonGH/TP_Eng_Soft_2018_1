@@ -39,7 +39,56 @@ descrevendo os principais interessados do projeto.
 
 <h2>Políticas de uso do Git</h2>
 <b> Estruturas de pastas: </b> A base da estrutura de pastas seguirá a estrutura prédefinida do framework usado - <i> Laravel </i>.
-Adicionando as visões estritamente em html na pasta <i> /resources/views/html </i>
+Adicionando as páginas html usadas como guia para as views na pasta <i> /resources/views/html </i>
 
 <b> Regras de commit: </b> O commit deve ser breve e conter em qual - ou quais - funcionalidades se foi trabalhado, identificando-a com uma sigla para o requisito rastreavel.
 
+**Estratégia de branching:** Foi criada uma branch `melo`, onde foi realizado o versionamento da aplicação em Laravel. A branch `master` foi usada para criação das "páginas-base" do design do projeto.  
+
+## Installing / Getting started
+
+Before use, you need to properly install all **Laravel** requirements below:
+
+1.    PHP >= 7.1.3
+2.    OpenSSL PHP Extension
+3.    PDO PHP Extension
+4.    Mbstring PHP Extension
+5.    Tokenizer PHP Extension
+6.    XML PHP Extension
+7.    Ctype PHP Extension
+8.    JSON PHP Extension
+
+You can follow my [laravel: getting started tutorial](https://github.com/GabrielMMelo/iot_server/blob/esp8266/resources/docs/pdf/Laravel.pdf) (PORTUGUESE LANGUAGE).
+
+> You must to have `apache` and some DBMS, like `mysql` 
+
+Then, you must `clone` our repo:
+
+```shell
+git clone https://github.com/HemersonGH/TP_Eng_Soft_2018_1
+cd TP_Eng_Soft_2018_1/
+```
+
+After properly configure, run and test your apache, you need to use some laravel commands:
+
+
+1. For first, copy and rename `/.env.example` to `/.env`.
+
+2. Open it and write your environment configuration. 
+
+3. So, create a new key (that's your unique key development):
+
+```shell
+php artisan key:generate
+```
+
+4. Make sure that the `vendor` folder has read permissions. You could do:
+
+```shell
+chmod -R 777 vendor/
+```
+
+**Attention:** it's not a practice recommended for production environments. 
+
+
+> Now your're ready to **trophy**!
