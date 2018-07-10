@@ -41,4 +41,24 @@ class disciplinaController extends Controller
         $disciplina->save();
         return redirect('home');
     }
+
+    public function create() {
+        $user = Auth::user();
+        $id = $user->id;
+        return view('cadastro_disciplina')->with(['id_professor' => $id]);
+    }
+
+    public function store(Request $request) {
+        $disciplina = new Disciplina;
+        $disciplina->nome = $request->input('nome');
+        $disciplina->id_professor = $request->input('id_professor');
+        $disciplina->tipo_trofeu = $request->input('tipo_trofeu');
+        $disciplina->tipo_atividade = $request->input('tipo_atividade');
+        $disciplina->descricao = $request->input('descricao');
+        $disciplina->codigo = $request->input('codigo');
+        $disciplina->save();
+
+        return redirect('home');
+
+    }
 }

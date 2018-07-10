@@ -36,6 +36,10 @@ Route::group(['middleware' => 'auth'], function(){
 		
 		Route::get('/{type_disciplinas}',['uses' => 'disciplinasController@view'])->name('disciplinas.view');
 
+        Route::get('/disciplina/create', 'disciplinaController@create')->name('disciplina.create');
+
+        Route::post('/disciplina/store', 'disciplinaController@store')->name('disciplina.store');
+
 		Route::get('/disciplina/{id}', ['uses' => 'disciplinaController@view'])->name('disciplina.view');
 
         Route::post('/disciplina/delete', ['uses' => 'disciplinaController@delete'])->name('disciplina.delete');
@@ -43,8 +47,6 @@ Route::group(['middleware' => 'auth'], function(){
 	});
 
 	Route::group(['prefix' => '/atividade'], function(){
-
-
 
 		Route::get('/{id_disciplina}/{id}',['uses' => 'atividadeController@view'])->name('atividade.view');
 

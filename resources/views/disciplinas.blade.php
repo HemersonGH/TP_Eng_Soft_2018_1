@@ -24,7 +24,10 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div id="positionBtn">
-                                        <button id="btn" type="submit" class="my-2 btn btn-outline-success" >Cadastrar Nova Disciplina</button>
+                                        <form action="{{ route('disciplina.create') }}" method="GET">
+                                            {{ csrf_field()  }}
+                                            <button id="btn" type="submit" class="my-2 btn btn-outline-success" >Cadastrar Nova Disciplina</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

@@ -88,7 +88,7 @@ php artisan key:generate
 chmod -R 777 vendor/
 ```
 
-**Attention:** it's not a practice recommended for production environments. 
+**Attention:** it's not a practice recommended for production environments!!. 
 
 
 > Now your're ready to **trophy**!
