@@ -2,12 +2,12 @@
 <p> Trabalho Prático De Engenharia de Software - 2018/1 - Sistema 
 Gerenciador De Atividades Curriculares </p>
 
- Os produtos de trabalho 
-referente a esse projeto se encontra no Google Driver pelo Link:
-<br /> 
-https://drive.google.com/drive/folders/1qKuH4UJI4pZ4dgHFmJyi52-NaFw-a3wr 
-<br /> 
-<br /> 
+Os produtos de trabalho 
+referente a esse projeto se encontram no **Google Drive** pelo Link:
+<br/> 
+https://drive.google.com/drive/folders/1h6rUoYo3x194U0iHHUzzplKlzInGpNYL
+<br/> 
+<br/> 
 Essa pasta conterá com as seguintes estruturas e 
 documentos:
 <br /> 
@@ -32,7 +32,7 @@ descrevendo os principais interessados do projeto.
 <br /> 
 <br /> 
 <b>Divisão Da Equipe CS Dev:</b> 
-<br /> Rafaela (Dev && Scrum Master && WebDesing)
+<br /> Rafaela (Dev && Scrum Master && WebDesign)
 <br /> Guilherme (Dev)
 <br /> Gabriel (Dev)
 <br />
