@@ -22,14 +22,12 @@
                         @if ($type_usuario != '0')
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <div id="positionBtn">
-                                        <a id="btn" href="{{ route('alocada.create',['id_disciplina'=>$disciplina->id]) }}" class="my-2 btn btn-outline-success" >Cadastrar Nova Atividade</a>
-                                    </div>
-                                    <div>
+                                    <div id="positionBtn" class="mb-3">
+                                        <a id="btn" href="{{ route('alocada.create',['id_disciplina'=>$disciplina->id]) }}" class="my-2 btn" >Cadastrar Nova Atividade</a>
                                         <form action="{{ route('disciplina.delete') }}" method="POST">
                                             {{ csrf_field()  }}
                                             <input type="hidden" name="id" value="{{$disciplina->id}}">
-                                            <button id="btn" href="#" class="btn btn-outline-danger">Finalizar disciplina</button>
+                                            <button id="btn" href="#" class="btn">Finalizar disciplina</button>
                                         </form>
                                     </div>
                                 </div>

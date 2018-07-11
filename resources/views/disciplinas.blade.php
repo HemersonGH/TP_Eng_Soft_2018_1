@@ -26,7 +26,7 @@
                                     <div id="positionBtn">
                                         <form action="{{ route('disciplina.create') }}" method="GET">
                                             {{ csrf_field()  }}
-                                            <button id="btn" type="submit" class="my-2 btn btn-outline-success" >Cadastrar Nova Disciplina</button>
+                                            <button id="btn" type="submit" class="my-2 btn" >Cadastrar Nova Disciplina</button>
                                         </form>
                                     </div>
                                 </div>

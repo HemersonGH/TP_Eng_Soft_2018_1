@@ -1,39 +1,131 @@
 .fakeimg {
-      height: 200px;
-      border: solid 1px #c19a25;
-  }
-  #menu{
-      background-color: #c19a25;
-  }
-  #top-bot{
-      background-color: #fff0c9;
-  }
-  img{
-      height: 140px;
-  }
-  #btnUsuario{
-      background-color: #fff0c9;
-      color: black;
-  }
-  #btnEntrar{
-      background-color: #c19a25;
-      color: white;
-  }
-  #formEntrar{
-      width: 430px;
-      margin-left: auto;
-      margin-right: auto;  
-      font-size: 17px;    
-  }
-  #tipoCadastro{
-      padding-top: 20px;
-      padding-bottom: 10px;
-  }
+    height: 200px;
+    border: solid 1px #c19a25;
+}
 
-  .error{
+#menu{
+    background-color: #c19a25;
+}
 
-    color: red;
+#top-bot{
+    background-color: #fff0c9;
+}
 
-  }
+img{
+    height: 140px;
+}
+
+#btnUsuario{
+    background-color: #fff0c9;
+    color: black;
+}
+
+#btn{
+    background-color: #c19a25;
+    color: white;
+}
+
+#format{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#antesBtn{
+    padding-top: 25px;
+}
+
+#form{
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+}
+
+#formEntrar{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+}
+
+#tipoCadastro{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.discOp {
+    height: 450px;
+    border: solid 1px #c19a25;
+    padding: 20px;
+    font-size: 18px;
+}
+
+#tituloPrincipal{
+    padding-bottom: 20px;
+    margin-left:-15px;
+}
+
+.rowElementos{
+    margin-left: -40px;
+}
+
+#opMenuDisc{
+    padding-bottom: 20px;
+}
+
+div.relative {
+    position: relative;
+    top: 200px;
+    right: -10px;
+}
+
+#opDisciplina{
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+#opTrofeuC{
+    padding-bottom: 20px;
+    padding-left: 40px;
+    text-align: center;
+}
+
+#positionBtn{
+    text-align: center;
+    padding-top: 150px;
+}
+
+#positionBtnTrofeusCadastrados{
+    text-align: center;
+    padding-top: 250px;
+}
+
+#positionBtnMinhasDisciplinas{
+    text-align: center;
+    padding-top: 170px;
+}
+
+#tituloOp{
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#opDisciplinaMatriculadas{
+    padding-bottom: 20px;
+}
+
+#imgTrofeu{
+    height: 80px;
+}
+
+#btnCadastrarT{
+    padding-top: 50px;
+}
 
   a{text-decoration: none !important;}
